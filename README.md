@@ -29,7 +29,7 @@ java -jar SnapShop.jar
 
 Requires JDK 8 or newer.
 
-Once the app opens, click **Set file** to pick an image, then click any filter button to apply it. **Save** writes the result to disk.
+When the app opens, a text field is pre-filled with the default image filename. Type any image path into the field (or keep the default), click **Load**, then click any filter button to apply the effect. The default filename is set in `SnapShopConfiguration`.
 
 ## Adding a new filter
 
