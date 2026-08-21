@@ -22,6 +22,7 @@ public class SnapShopConfiguration
     theShop.addFilter(new LaplacianFilter(),"Laplacian Filter");
     theShop.addFilter(new UnsharpMaskingFilter(),"Unsharp Masking Filter");
     theShop.addFilter(new EdgyFilter(),"Edgy Filter");
-    //theShop.addFilter(new AdditionalFilter(),"Additional Filter");
+    theShop.addFilter(new WarmingFilter(), "Warming");
+    theShop.addFilter(new CoolingFilter(), "Cooling");
   }
 }
