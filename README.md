@@ -51,7 +51,7 @@ When the app opens, a text field is pre-filled with the default image filename. 
 
 ## Project layout
 
-'''
+```
 src/
 ├── SnapShop.java # main window, UI wiring, entry point
 ├── SnapShopConfiguration.java # registers filters and default image
@@ -67,7 +67,7 @@ src/
 ├── EdgyFilter.java
 ├── CoolingFilter.java
 └── WarmingFilter.java
-'''
+```
 
 ## Author
 
