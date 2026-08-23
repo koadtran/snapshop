@@ -1,6 +1,6 @@
 # SnapShop
 
-A small Java Swing image-editing app. Load a photo, click a filter, watch it transform. Built as an exercise in the Filter design pattern — each effect is a self-contained class that implements a common `Filter` interface, so adding a new one is a two-line change.
+A small Java Swing image-editing app. Load a photo, click a filter, watch it transform.
 
 ## Filters
 
@@ -27,27 +27,7 @@ jar cfe SnapShop.jar SnapShop -C build .
 java -jar SnapShop.jar
 ```
 
-Requires JDK 8 or newer.
-
 When the app opens, a text field is pre-filled with the default image filename. Type any image path into the field (or keep the default), click **Load**, then click any filter button to apply the effect. The default filename is set in `SnapShopConfiguration`.
-
-## Adding a new filter
-
-1. Create `MyFilter.java` implementing the `Filter` interface:
-```java
-   public class MyFilter implements Filter {
-       public void filter(PixelImage pi) {
-           Pixel[][] data = pi.getData();
-           // ...transform data...
-           pi.setData(data);
-       }
-   }
-```
-2. Register it in `SnapShopConfiguration.configure()`:
-```java
-   theShop.addFilter(new MyFilter(), "My Filter");
-```
-3. Rebuild — a new button appears in the UI.
 
 ## Project layout
 
@@ -68,7 +48,3 @@ src/
 ├── CoolingFilter.java
 └── WarmingFilter.java
 ```
-
-## Author
-
-Khoa Dang Tran
